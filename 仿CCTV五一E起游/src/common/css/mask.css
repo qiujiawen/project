@@ -1,0 +1,6 @@
+.mask-wrap {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5) url("../img/mask.png") no-repeat center 3rem;
+    background-size: 3.25rem 2.01rem;
+}

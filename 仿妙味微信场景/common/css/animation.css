@@ -1,0 +1,211 @@
+/*开场页面消失时候的动画*/
+@keyframes start-animation {
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    20% {
+        background: rgba(0, 0, 0, .5);
+    }
+
+    40% {
+        background: rgba(0, 0, 0, .6);
+    }
+
+    60% {
+        background: rgba(0, 0, 0, .5);
+    }
+
+    80% {
+        background: rgba(0, 0, 0, .3);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0);
+    }
+}
+
+/*开场页面sun的动画*/
+@keyframes start-sun {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .7;
+        transform: scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes start-text {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*开场页面流星的动画*/
+@keyframes meteor-animation {
+    0% {
+        transform: rotate(-45deg) translate3d(0, 0, 0) scale(.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(-45deg) translate3d(-2rem, 0, 0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) translate3d(-5rem, 0, 0) scale(.5);
+        opacity: 0;
+    }
+}
+
+/*滑动页面进入或消失时候的动画*/
+@keyframes li-now-animation {
+    0% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+}
+
+@keyframes li-next-animation {
+    0% {
+        opacity: 0;
+        transform: rotateX(-50deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes li-now-second-animation {
+    0% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(-50deg);
+    }
+}
+
+@keyframes li-next-second-animation {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+
+    50% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+/*箭头的动画效果*/
+@keyframes arrow-img {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+}
+
+/*li内部图片的动画*/
+@keyframes list-img-animation {
+    0% {
+        transform: scale(4);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes list-second-img-animation {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes list-third-img-animation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    40% {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    60% {
+        opacity: .8;
+        transform: scale(1.1);
+    }
+
+    80% {
+        opacity: .5;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}

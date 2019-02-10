@@ -1,0 +1,172 @@
+html {
+    font-size: 15.625vw;
+}
+
+body {
+    margin: 0;
+    font-size: .28rem;
+    color: #666;
+    font-family: Arial, '微软雅黑';
+    -webkit-text-size-adjust: none;
+}
+
+h1, h2, h3, h4, p, dl, dd {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+img {
+    vertical-align: top;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input, textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+em {
+    font-style: normal;
+}
+
+.app {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    transition: 1s;
+    opacity: 0;
+    display: none;
+}
+
+.page-show {
+    opacity: 1;
+    display: block;
+}
+
+.page-hidden {
+    opacity: 0;
+    transition: 1s;
+}
+
+.page:nth-of-type(1) {
+    z-index: 10;
+}
+
+.page:nth-of-type(2) {
+    z-index: 9;
+}
+
+.page:nth-of-type(3) {
+    z-index: 8;
+}
+
+.page:nth-of-type(4) {
+    z-index: 7;
+}
+
+.page:nth-of-type(5) {
+    z-index: 6;
+}
+
+.page:nth-of-type(6) {
+    z-index: 5;
+}
+
+.tag {
+    padding: .21rem 0 0 .26rem;
+}
+
+.tag-title {
+    font-size: .28rem;
+    line-height: .54rem;
+}
+
+.tag label {
+    float: left;
+    line-height: .5rem;
+    margin: .1rem .14rem .1rem .3rem;
+}
+
+.tag label input {
+    display: none;
+}
+
+.tag label span {
+    float: left;
+    border: 1px solid #cdd6e1;
+    padding: 0 .24rem;
+    border-radius: .26rem;
+}
+
+.tag input:checked + span {
+    background: #3c9bbb;
+    border-color: #3c9bbb;
+    color: #fff;
+}
+
+.btn {
+    position: absolute;
+    bottom: .17rem;
+    left: .17rem;
+    width: 6.06rem;
+    height: .74rem;
+    font-size: .3rem;
+    background: #cacaca;
+    border-radius: .05rem;
+}
+
+.btn-active {
+    background: #3c9bbb;
+    color: #fff;
+}
+
+.label-btn .btn-info {
+    font-size: .26rem;
+    line-height: .6rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: .91rem;
+    transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+}
+
+.btn-info-default {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.btn-info-active {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+}

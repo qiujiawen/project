@@ -1,0 +1,26 @@
+.form-wrap {
+    background: #eee;
+}
+
+.form-tag {
+    background: url("../img/formBg.png") no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 3.93rem;
+    color: #fff;
+    padding-top: .53rem;
+}
+
+.form-tag label {
+    margin: .1rem .3rem .1rem .2rem;
+}
+
+.form-text {
+    display: block;
+    box-sizing: border-box;
+    width: 100vw;
+    font-size: .26rem;
+    line-height: .5rem;
+    padding: .1rem .2rem;
+    margin-top: .3rem;
+}

@@ -1,0 +1,331 @@
+html {
+    font-size: 15.625vw;;
+}
+
+body {
+    margin: 0;
+    font-size: .28rem;
+    -webkit-text-size-adjust: none;
+    font-family: Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+    display: block;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.page .list-wrap, .start-page, .wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.start-bg {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+}
+
+.page .hidden {
+    display: none;
+}
+
+.page .show {
+    display: block;
+    transition: 1s;
+}
+
+.start-mask {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start-mask-hidden {
+    animation: 2s start-animation linear forwards;
+    -webkit-animation: 2s start-animation linear forwards;
+}
+
+.extra {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.extra .sun {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -.5rem;
+    top: 25%;
+    animation: 2s linear start-sun infinite;
+    -webkit-animation: 2s linear start-sun infinite;
+}
+
+.extra .t1 {
+    width: 3.48rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.74rem;
+    top: 40%;
+    opacity: 0;
+}
+
+.start-text-animation {
+    opacity: 1;
+    animation: 2s linear start-text infinite;
+    -webkit-animation: 2s linear start-text infinite;
+}
+
+.extra .t2 {
+    width: 4.18rem;
+    height: 3.9rem;
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    margin-left: -2.09rem;
+    top: 40%;
+}
+
+.extra .meteor img {
+    position: absolute;
+    -webkit-transform-origin: left;
+    opacity: 0;
+}
+
+.extra .meteor img:nth-of-type(1) {
+    left: 5rem;
+    top: 4rem;
+    height: 0.2rem;
+    animation: 5s meteor-animation linear infinite;
+    -webkit-animation: 5s meteor-animation linear infinite;
+}
+
+.extra .meteor img:nth-of-type(2) {
+    left: 3rem;
+    top: 2rem;
+    height: 0.1rem;
+    animation: 5s .5s meteor-animation linear infinite;
+    -webkit-animation: 5s .5s meteor-animation linear infinite;
+}
+
+.extra .meteor img:nth-of-type(3) {
+    left: 3rem;
+    top: 5rem;
+    height: 0.15rem;
+    animation: 5s 1s meteor-animation linear infinite;
+    -webkit-animation: 5s 1s meteor-animation linear infinite;
+}
+
+.extra .meteor img:nth-of-type(4) {
+    left: 5rem;
+    top: 7rem;
+    height: 0.25rem;
+    animation: 2.5s 3s meteor-animation linear infinite;
+    -webkit-animation: 2s 3s meteor-animation linear infinite;
+}
+
+.extra .meteor img:nth-of-type(5) {
+    left: 7rem;
+    top: 8rem;
+    height: 0.3rem;
+    animation: 2.5s 3s meteor-animation linear infinite;
+    -webkit-animation: 2.5s 3s meteor-animation linear infinite;
+}
+
+/*ul样式*/
+.list-wrap {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 8rem;
+    -webkit-perspective: 8rem;
+}
+
+.list-wrap > li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    transform-origin: bottom;
+}
+
+.list-wrap .li-show {
+    display: block;
+}
+
+.list-wrap .li-now-animation {
+    animation: .5s li-now-animation linear forwards;
+    -webkit-animation: .5s li-now-animation linear forwards;
+}
+
+.list-wrap .li-next-animation {
+    animation: 0.8s li-next-animation linear forwards;
+    -webkit-animation: 0.8s li-next-animation linear forwards;
+}
+
+.list-wrap .li-now-second-animation {
+    animation: 1s li-now-second-animation linear forwards;
+    -webkit-animation: 1s li-now-second-animation linear forwards;
+}
+
+.list-wrap .li-next-second-animation {
+    animation: 0.8s  li-next-second-animation linear forwards;
+    -webkit-animation: 0.8s  li-next-second-animation linear forwards;
+}
+
+.list-wrap > li img {
+    width: 100vw;
+    height: auto;
+    opacity: 0;
+}
+
+/*底部箭头样式*/
+.arrow {
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -.5rem;
+    bottom: .1rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.arrow img{
+    width: .28rem;
+    height: .16rem;
+    margin: 0 auto;
+    -webkit-animation: 1s arrow-img linear infinite;
+    animation: 1s arrow-img linear infinite;
+}
+
+.arrow span{
+    font-size: .26rem;
+    color: #666;
+}
+
+/*li内部图片的动画样式*/
+.list-img-animation {
+    animation: 1.5s list-img-animation linear forwards;
+    -webkit-animation: 1.5s list-img-animation linear forwards;
+}
+
+.list-second-img-animation {
+    animation: 1s .5s list-second-img-animation linear forwards;
+    -webkit-animation: 1s .5s list-second-img-animation linear forwards;
+}
+
+.list-wrap > li img:nth-of-type(3) {
+    position: absolute;
+    opacity: 0;
+}
+
+.list-wrap > li:nth-of-type(1) img:nth-of-type(3) {
+    left: .9rem;
+    top: 5.3rem;
+    width: 4.36rem;
+    height: .39rem;
+}
+
+.list-wrap > li:nth-of-type(2) img:nth-of-type(3) {
+    left: 1.53rem;
+    top: 4.95rem;
+    width: 3.31rem;
+    height: .75rem;
+}
+
+.list-wrap > li:nth-of-type(3) img:nth-of-type(3) {
+    left: 2.23rem;
+    top: 7.09rem;
+    width: 2.12rem;
+    height: 2.23rem;
+}
+
+.list-wrap > li:nth-of-type(4) img:nth-of-type(3) {
+    left: 1.53rem;
+    top: 5.23rem;
+    width: 3.34rem;
+    height: 1.52rem;
+}
+
+.list-wrap > li:nth-of-type(5) img:nth-of-type(3) {
+    left: 1.95rem;
+    top: 7.33rem;
+    width: 2.51rem;
+    height: .41rem;
+}
+
+.list-wrap > li:nth-of-type(6) img:nth-of-type(3) {
+    left: .49rem;
+    top: 5.23rem;
+    width: 3.79rem;
+    height: .97rem;
+}
+
+.list-wrap > li:nth-of-type(7) img:nth-of-type(3) {
+    left: 2.37rem;
+    top: 5.3rem;
+    width: 1.66rem;
+    height: .4rem;
+}
+
+.list-wrap > li:nth-of-type(8) img:nth-of-type(3) {
+    left: 2.31rem;
+    top: 5.23rem;
+    width: 1.78rem;
+    height: 1.78rem;
+}
+
+.list-wrap > li .list-third-img-animation{
+    animation: 1s list-third-img-animation linear infinite;
+    -webkit-animation: 1s list-third-img-animation linear infinite;
+}
+
+/*背景音乐*/
+.music {
+    z-index: 10;
+    width: .3rem;
+    height: .3rem;
+    position: absolute;
+    right: .15rem;
+    bottom: .15rem;
+}
+
+.play {
+    background: url("../img/musicon.gif") no-repeat;
+}
+
+.stop {
+    background: url("../img/musicoff.gif") no-repeat;
+}
+
+
+
+
+

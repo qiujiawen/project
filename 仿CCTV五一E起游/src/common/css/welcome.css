@@ -1,0 +1,137 @@
+@keyframes translateY-animation {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.welcome-logo-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(1.5rem);
+    animation: 1s 1s translateY-animation forwards linear;
+    -webkit-animation: 1s 1s translateY-animation forwards linear;
+}
+
+.welcome-logo-wrap img {
+    width: 5rem;
+    height: .36rem;
+}
+
+.tree {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100vw;
+    opacity: 0;
+    transform: translateY(1.5rem);
+    animation: 1s translateY-animation forwards linear;
+    -webkit-animation: 1s translateY-animation forwards linear;
+}
+
+.tree-img {
+    width: 6.4rem;
+    height: 4.1rem;
+}
+
+.extra {
+    position: relative;
+    padding-top: .5rem;
+    opacity: 0;
+    transform: translateY(1.5rem);
+    animation: 1s .5s translateY-animation forwards linear;
+    -webkit-animation: 1s .5s translateY-animation forwards linear;
+}
+
+.extra img {
+    height: .73rem;
+}
+
+@keyframes shake-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(30deg);
+    }
+    40% {
+        transform: rotate(-20deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.shake {
+    background: url("../img/shake.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 5.09rem;
+    top: .12rem;
+    width: .28rem;
+    height: .31rem;
+    animation: 1s 1.5s shake-animation linear forwards;
+    -webkit-animation: 1s 1.5s shake-animation linear forwards;
+}
+
+.title2 {
+    padding-top: .2rem;
+    height: .39rem;
+    opacity: 0;
+    transform: translateY(1.5rem);
+    animation: 1s .5s translateY-animation linear forwards;
+    -webkit-animation: 1s .5s translateY-animation linear forwards;
+}
+
+.cloud {
+    background: url("../img/cloud.png");
+    position: absolute;
+    background-size: contain;
+}
+
+@keyframes cloud-animation {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+
+    100% {
+        transform: translate3d(.2rem,0,0);
+    }
+}
+
+.cloud:nth-of-type(1) {
+    left: 4.32rem;
+    top: .15rem;
+    width: .58rem;
+    height: .44rem;
+    animation: 3s 1.2s cloud-animation alternate infinite;
+    -webkit-animation: 3s 1.2s cloud-animation alternate infinite;
+}
+
+.cloud:nth-of-type(2) {
+    left: .79rem;
+    top: .77rem;
+    width: .91rem;
+    height: .7rem;
+    animation: 3.5s 1.5s cloud-animation alternate infinite;
+    -webkit-animation: 3.5s 1.5s cloud-animation alternate infinite;
+}
+
+.cloud:nth-of-type(3) {
+    left: 4.02rem;
+    top: 1.42rem;
+    width: .54rem;
+    height: .41rem;
+    animation: 4s 2s cloud-animation alternate infinite;
+    -webkit-animation: 4s 2s cloud-animation alternate infinite;
+}

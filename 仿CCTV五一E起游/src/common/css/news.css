@@ -1,0 +1,45 @@
+.news-wrap {
+    background: #eee;
+}
+
+.news-wrap img {
+    height: 3.42rem;
+    width: 6.4rem;
+}
+
+.news-wrap h2 {
+    line-height: .8rem;
+    padding: .24rem 0 0 .34rem;
+    font-size: .26rem;
+}
+
+.news-file {
+    background: #fff;
+    height: 1.88rem;
+}
+
+.news-file label {
+    width: 50%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    line-height: .52rem;
+    text-align: center;
+}
+
+.news-file label input {
+    display: none;
+}
+
+.news-file label:nth-of-type(1) {
+    background: url("../img/camera1.png") no-repeat center .2rem;
+    border-right: 1px solid #e5e5e5;
+    background-size: .81rem .7rem;
+}
+
+.news-file label:nth-of-type(2) {
+    background: url("../img/camera2.png") no-repeat center .2rem;
+    border-right: 1px solid #e5e5e5;
+    background-size: .83rem .62rem;
+}

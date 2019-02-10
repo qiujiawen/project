@@ -1,0 +1,14 @@
+.message-textarea{
+    display: block;
+    box-sizing: border-box;
+    width: 80vw;
+    height: 3.5rem;
+    font: .3rem/.5rem '宋体';
+    margin: .5rem auto;
+    padding: .25rem;
+    border: 1px solid #ccc;
+}
+.message-btn{
+    display: block;
+    margin: 0 auto;
+}
