@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card,Tag,Avatar} from 'antd';
-import TagComponent from  '../../common/component/tag';
+import TagComponent from '../../common/component/tag';
 import {Link} from "react-router-dom";
 export default class CardComponent extends React.Component{
     render(){

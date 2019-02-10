@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {List,Avatar} from 'antd';
-import TagComponent from  '../../common/component/tag';
+import TagComponent from '../../common/component/tag';
 export default class ListComponent extends React.Component{
     render(){
         let {loading,data} = this.props;
