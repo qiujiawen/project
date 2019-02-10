@@ -1,0 +1,430 @@
+body,h1,h2,h3,h4,p,dl,dd{
+    margin: 0;
+}
+
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+#page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrap{
+    flex: 1;
+}
+
+.wrap{
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*公共样式*/
+.error-style{
+    color: #e8e8e8;
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
+.error-style>.ant-spin{
+    color: #e8e8e8;
+}
+
+.loading-wrap{
+    width: 90vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.loading-flex{
+    display: flex;
+}
+
+.loading-ceil{
+    flex: 1;
+    background: #c1c8cb;
+    height: 20px;
+    margin: 10px 0 0 10px;
+}
+
+/*头部样式*/
+.header-wrap .logo{
+    height: 100%;
+    display: block;
+}
+
+.header-wrap .logo img{
+    height: 34px;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.divider{
+    margin: 15px 0;
+    height: 34px;
+    float: left;
+}
+
+.header-menu{
+    float: left;
+    line-height: 64px;
+    margin-left: 10px;
+}
+
+.ant-layout-header{
+    padding: 0;
+}
+
+.header-menu .anticon{
+    margin-right: 3px;
+}
+
+.drop-down{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+}
+
+/*尾部样式*/
+.footer-wrap{
+    background: #f0f2f5;
+}
+
+.footer-wrap span,p{
+    color: #ababab;
+}
+
+.footer-wrap p{
+    margin-bottom: 20px;
+}
+
+.footer-wrap div:nth-of-type(2) img{
+    margin: 0 10px;
+}
+
+.ant-layout-footer{
+    padding: 24px 5px;
+}
+
+/*首页样式*/
+.home-wrap>.wrap{
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+
+.home-wrap-first-col .ant-menu-vertical{
+    border: none;
+    text-align: center;
+}
+
+.ant-menu-vertical li:nth-of-type(1){
+    margin-top: 0;
+}
+
+.ant-menu-item-selected{
+    box-sizing: border-box;
+    border-right: 2px solid;
+}
+
+.home-wrap-second-col{
+    border-left: 1px solid #e8e8e8;
+    min-height: 80vh;
+}
+
+/*首页响应式布局*/
+@media screen and (max-width: 767px){
+    .home-wrap>.wrap{
+        border: none;
+    }
+    .home-wrap-first-col .ant-menu-vertical{
+        display: flex;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .home-wrap-first-col li{
+        flex: 1;
+        margin: 0 0 -1px 0!important;
+        box-sizing: border-box;
+    }
+    .ant-menu-vertical .ant-menu-item-selected{
+        border-right: none;
+        border-bottom: 2px solid #1890ff;
+    }
+}
+
+/*首页列表*/
+.list-add-style:hover {
+    background: #e8e8e8;
+}
+
+.ant-list-item-meta{
+    padding: 0 10px;
+}
+
+.ant-list-item-meta-title{
+    margin-bottom: 0;
+}
+
+.ant-list-item-meta-title a:hover{
+    text-decoration: underline;
+}
+
+/*新手入门样式*/
+.banner{
+    margin: 13px auto;
+}
+
+/*通用样式*/
+.purpose-header{
+    background: #e1e1e1;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.purpose-header p{
+    float: left;
+    padding: 0 5px;
+}
+
+.purpose-header span{
+    margin-left: 5px;
+}
+
+.purpose-header a{
+    color: #80bd01;
+}
+
+.purpose-header a:hover{
+    text-decoration: underline;
+}
+
+.ant-card-type-inner .ant-card-head-title{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.ant-card p{
+    padding: 5px 0;
+}
+
+.ant-card p a{
+    padding-left: 5px;
+}
+
+.ant-card p a:hover{
+    text-decoration: underline;
+}
+
+.ant-card p strong,.last-content{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #333;
+}
+
+.ant-card img{
+    width: 250px;
+    height: 60px;
+}
+
+/*详情页面样式*/
+.list-wrap{
+    padding-top: 13px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.markdown-text pre{
+    white-space: pre-line;
+}
+
+.user-name-style{
+    margin: 0 5px;
+}
+
+.details-wrap-title h1{
+    white-space: pre-line;
+}
+
+.details-wrap-title span{
+    font-size: 12px;
+    color: #838383;
+}
+
+.list-wrap img{
+    max-width: 100%;
+}
+
+.ant-list-header{
+    background: #f6f6f6;
+}
+
+.markdown-text>p{
+    color: #333;
+}
+
+.details-card-body img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.no-data-style{
+    margin: 0 auto;
+    color: #838383;
+}
+
+/*用户信息样式*/
+.user-wrap-header{
+    padding: 10px;
+    border: 1px solid  #e8e8e8;
+    margin-bottom: 13px;
+}
+
+.user-wrap-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.user-wrap-img{
+    text-align: center;
+}
+
+.user-wrap-p{
+    margin-top: 10px;
+    color: #333;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+
+.user-wrap-p span{
+    flex: 1;
+    color: #838383;
+}
+
+.add-ant-list-item-meta{
+    display: flex;
+    padding: 0;
+}
+
+.add-ant-list-item-meta>.ant-list-item-meta-content{
+    margin: auto;
+}
+
+.add-ant-list-item-meta>.ant-list-item-meta-avatar{
+    margin-right: 5px;
+}
+
+.add-user-name-style{
+    margin: 0 15px 0 -3px;
+}
+
+.user-wrap>.ant-list-bordered{
+    margin-bottom:13px;
+}
+
+
+/*登录注册*/
+.joint{
+    border: 1px solid #e8e8e8;
+}
+
+.joint-info{
+    max-width: 60%;
+    margin: 40px auto;
+}
+
+.joint-info input{
+    width: 84%;
+    float: right;
+}
+
+.joint-info span{
+    float: left;
+    line-height: 32px;
+    height: 32px;
+}
+
+.joint-info-first{
+    height: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.joint-info-second>button{
+    margin-right: 5px;
+}
+
+.joint-info-second>button:nth-of-type(2){
+    margin-right: 15px;
+}
+
+.joint-info-second{
+    display: flex;
+    width: 86%;
+    padding-left: 16%;
+}
+
+.joint-info-second a{
+    margin:auto;
+}
+
+.joint-info-second a:hover{
+    text-decoration: underline;
+}
+
+.joint-second{
+    padding-left: 13px;
+}
+
+.joint-second p{
+    padding-top: 15px;
+}
+
+.joint-second p:nth-of-type(3),p:nth-of-type(4),p:nth-of-type(5),p:nth-of-type(6){
+    text-indent: 20px;
+    padding-top: 5px;
+}
+
+.register-joint-info-second{
+    width: 100%;
+}
+
+.register-joint-info-second>button{
+    width: 200px;
+    height: 40px;
+    margin: 0;
+}
+
+.register-joint-info-second>button span{
+    float: none;
+}
+
+/*翻页样式*/
+.pagination-style{
+    padding: 13px 0;
+    border-top: 1px solid #e8e8e8;
+}
