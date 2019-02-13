@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>H5场景动画demo</title>
+    <link rel="stylesheet" href="./common/css/index.css">
+</head>
+<body>
+<div class="page"></div>
+<div class="music music-autoPlay">
+    <audio src="./common/music/music.wav" preload="auto" loop="loop" autoplay>该浏览器不支持audio属性</audio>
+</div>
+<script src="common/js/carousel.js"></script>
+<script src="common/js/arrow.js"></script>
+<script>
+    (function () {
+        let music = document.querySelector('.music'),
+            audios = music.querySelector('audio');
+
+        music.addEventListener('touchstart', function () {
+            if (audios.paused) {
+                audios.play();
+                music.classList.add('music-autoPlay');
+            } else {
+                audios.pause();
+                music.classList.remove('music-autoPlay');
+            }
+        });
+    })()
+</script>
+</body>
+</html>
