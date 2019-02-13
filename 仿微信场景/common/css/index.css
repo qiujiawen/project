@@ -246,60 +246,23 @@ img {
     opacity: 0;
 }
 
+.list-wrap > li:nth-of-type(1) img:nth-of-type(1) {
+    width: 6.4rem;
+    height: 4.8rem;
+}
+
+.list-wrap > li img:nth-of-type(3) {
+    left: .49rem;
+    top: 5.38rem;
+    width: 4.81rem;
+    height: .96rem;
+}
+
 .list-wrap > li:nth-of-type(1) img:nth-of-type(3) {
     left: .9rem;
     top: 5.3rem;
     width: 4.36rem;
     height: .39rem;
-}
-
-.list-wrap > li:nth-of-type(2) img:nth-of-type(3) {
-    left: 1.53rem;
-    top: 4.95rem;
-    width: 3.31rem;
-    height: .75rem;
-}
-
-.list-wrap > li:nth-of-type(3) img:nth-of-type(3) {
-    left: 2.23rem;
-    top: 7.09rem;
-    width: 2.12rem;
-    height: 2.23rem;
-}
-
-.list-wrap > li:nth-of-type(4) img:nth-of-type(3) {
-    left: 1.53rem;
-    top: 5.23rem;
-    width: 3.34rem;
-    height: 1.52rem;
-}
-
-.list-wrap > li:nth-of-type(5) img:nth-of-type(3) {
-    left: 1.95rem;
-    top: 7.33rem;
-    width: 2.51rem;
-    height: .41rem;
-}
-
-.list-wrap > li:nth-of-type(6) img:nth-of-type(3) {
-    left: .49rem;
-    top: 5.23rem;
-    width: 3.79rem;
-    height: .97rem;
-}
-
-.list-wrap > li:nth-of-type(7) img:nth-of-type(3) {
-    left: 2.37rem;
-    top: 5.3rem;
-    width: 1.66rem;
-    height: .4rem;
-}
-
-.list-wrap > li:nth-of-type(8) img:nth-of-type(3) {
-    left: 2.31rem;
-    top: 5.23rem;
-    width: 1.78rem;
-    height: 1.78rem;
 }
 
 .list-wrap > li .list-third-img-animation{
